@@ -1,0 +1,94 @@
+body{
+    background-image: url("fondorojo1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+container{
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 20px 18px -18px rgba(0,0,0,0.4);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-grid;
+    padding: 11px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    color:#e00e0e;
+    cursor:pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+nav ul li::after{
+content: '';
+background: #ff3b35;
+width: 100%;
+height: 100%;
+border-radius: 30px;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+z-index: -1;
+opacity: 0;
+text-decoration: none;
+}
+nav ul li:hover{
+    color:#7c0909;
+}
+nav ul li:hover::after{
+    top:50%;
+    opacity: 1;
+}
+
+h1 {text-shadow: 6px 3px 4px rgb(250, 137, 137);}
+h3 {text-shadow: 4px 1px 2px rgb(255, 188, 188);}
+h4 {text-shadow: 4px 1px 2px rgb(255, 188, 188);}
+h5 {text-shadow: 4px 1px 2px rgb(255, 188, 188);}
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+  }
+  .container .item{
+    height: 90px;
+    width: 150px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .item img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: .2s linear;
+
+  }
+  .item img:hover{
+    transform: scale(1.1)
+  }
+  .video-container{
+   border-color: #7c0909;
+  }
+  
+  
