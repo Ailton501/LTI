@@ -1,0 +1,154 @@
+body {
+    background-image: url("fondorojo1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  container {
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 20px 18px -18px rgba(0, 0, 0, 0.4);
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: inline-grid;
+    padding: 11px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #e00e0e;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  
+  nav ul li::after {
+    content: '';
+    background: #ff3b35;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    color: #7c0909;
+  }
+  
+  nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+  }
+  
+  h1,
+  h3 {
+    background: rgba(199, 170, 170, 0.589);
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .container .item {
+    height: 90px;
+    width: 150px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .item img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: 0.2s linear;
+  }
+  
+  .item img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /* Diseño de la galeria de imagenes */
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+  }
+  
+  .image-container:hover .image-text {
+    opacity: 1;
+    bottom: 0;
+  }
+  
+  section img {
+    width: 300px; /* Tamaño fijo de las imágenes */
+    height: 300px; /* Tamaño fijo de las imágenes */
+    object-fit: cover; /* Para mantener la relación de aspecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease;
+  }
+  
+  section img:hover {
+    transform: scale(1.1);
+  }
+  *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  body
+  {
+  margin: 0;
+  padding: 0;
+  color: #cdcdcd;
+  }  
